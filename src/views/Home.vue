@@ -1,4 +1,4 @@
 <script setup></script>
 <template>
-    <div>Powerball</div>
+    <div>NEWS AGGREGATOR</div>
 </template>

@@ -11,44 +11,48 @@ const routes = [
         }
     },
     {
-        text: 'Results',
+        text: 'Auth',
         route: {
-            name: 'results'
+            name: 'auth'
         }
     },
-    {
-        text: 'How To Play',
-        route: {
-            name: 'how-to-play'
-        }
-    },
-    {
-        text: 'Prizes',
-        route: {
-            name: 'prizes'
-        }
-    },
-    {
-        text: 'FAQs',
-        route: {
-            name: 'faqs'
-        }
-    },
-    {
-        text: 'News',
-        route: {
-            name: 'news'
-        }
-    },
+    // {
+    //     text: 'Results',
+    //     route: {
+    //         name: 'results'
+    //     }
+    // },
+    // {
+    //     text: 'How To Play',
+    //     route: {
+    //         name: 'how-to-play'
+    //     }
+    // },
+    // {
+    //     text: 'Prizes',
+    //     route: {
+    //         name: 'prizes'
+    //     }
+    // },
+    // {
+    //     text: 'FAQs',
+    //     route: {
+    //         name: 'faqs'
+    //     }
+    // },
+    // {
+    //     text: 'News',
+    //     route: {
+    //         name: 'news'
+    //     }
+    // },
 ]
 
 </script>
 
 <template>
-    <div class="py-7 uppercase text-xl font-bold" >
-        <RouterLink
-            :class="`flex-1 px-14 py-5 ${ route.name == r.route.name  && 'border-b'}`"
-            v-for="r in routes"
+    <div class="py-7 uppercase text-xl font-bold">
+        <RouterLink :class="`flex-1 px-14 py-5 ${route.name == r.route.name && 'border-b'}`" v-for="r in routes"
             :to="r.route || {}">
             <span :class="``">{{ r.text }}</span>
         </RouterLink>
