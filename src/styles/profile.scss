@@ -1,0 +1,70 @@
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  .return {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: 2A2F33;
+    background-color: #fff;
+  }
+  .form {
+    width: 30%;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    input,
+    select {
+      width: 100%;
+      border: none;
+      padding: 10px;
+    }
+    .button {
+      display: inline-block;
+      padding: 5px 10px;
+
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: 2A2F33;
+      background-color: #fff;
+      font-size: 20px;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .profileCard {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      button {
+        cursor: pointer;
+        color: #2a2f33;
+        padding: 20px;
+        font-size: 20px;
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+  }
+}
